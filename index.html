@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Mood Tracker Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily Mood Tracker Calendar</h1>
+      <p>Log your mood for each day and visualize your emotional trends on a calendar view.</p>
+    </header>
+    
+    <!-- Mood Picker Section -->
+    <section class="mood-picker">
+      <h2>Select Your Mood for Today</h2>
+      <button class="mood-btn" data-mood="😊">😊</button>
+      <button class="mood-btn" data-mood="😢">😢</button>
+      <button class="mood-btn" data-mood="😐">😐</button>
+      <button class="mood-btn" data-mood="😄">😄</button>
+      <!-- Feel free to add more mood options -->
+    </section>
+    
+    <!-- Calendar Container -->
+    <section class="calendar-section">
+      <h2>Your Mood Calendar</h2>
+      <div class="calendar-controls">
+        <button class="carousel-btn prev-month"><</button>
+        <div class="calendar-header"></div>
+        <button class="carousel-btn next-month">></button>
+      </div>
+      <div id="calendarContainer"></div>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
