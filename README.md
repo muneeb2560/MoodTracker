@@ -3,7 +3,35 @@ Hi 👋, I'm Moneeb Raza
 
 ### A passionate frontend developer from India
 
-![muneeb2560](https://komarev.com/ghpvc/?username=muneeb2560&label=Profile%20views&color=0e75b6&style=flat)
+# Daily Mood Tracker Calendar 🌟  
+*A simple web app to log daily moods and visualize trends on a calendar*  
+
+![Profile Views](https://komarev.com/ghpvc/?username=muneeb2560&label=Profile%20views&color=0e75b6&style=flat "Profile Views")  
+[![LinkedIn](https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg=20x20) [LinkedIn Profile](https://www.linkedin.com/in/moneebraza/)] [[2]][[6]]
+
+---
+
+## About the Project 🚀 [[1]][[10]]  
+This app allows users to:  
+✅ Log daily moods using emojis (😊, 😢, 😐, 😄)  
+✅ View mood trends on an interactive calendar  
+✅ Navigate between months using arrow controls  
+✅ Store data locally for persistent tracking  
+
+---
+
+## Key Features ✨ [[4]][[7]]  
+- **Real-time logging**: Instantly record your mood with a single click  
+- **Calendar navigation**: Use ←/→ buttons to explore past months  
+- **Responsive design**: Works seamlessly on desktop/mobile  
+- **Local storage**: No sign-up required - data persists across sessions  
+
+---
+
+## Setup & Usage 🛠️ [[5]][[7]]  
+1. **Clone the repository**:  
+   ```bash  
+   git clone https://github.com/muneeb2560/MoodTracker.git  
 
 ### Connect with me:
 
