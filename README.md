@@ -6,8 +6,8 @@ Hi 👋, I'm Moneeb Raza
 # Daily Mood Tracker Calendar 🌟  
 *A simple web app to log daily moods and visualize trends on a calendar*  
 
-![Profile Views](https://komarev.com/ghpvc/?username=muneeb2560&label=Profile%20views&color=0e75b6&style=flat "Profile Views")  
-[![LinkedIn](https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg=20x20) [LinkedIn Profile](https://www.linkedin.com/in/moneebraza/)] [[2]][[6]]
+![Profile Views](https://komarev.com/ghpvc/?username=muneeb2560&label=Profile%20views&color=0e75b6&style=flat "Profile Views")
+[LinkedIn Profile](https://www.linkedin.com/in/moneebraza/)] [[2]][[6]]
 
 ---
 
