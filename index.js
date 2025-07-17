@@ -96,6 +96,7 @@ document.querySelectorAll('.mood-btn').forEach(btn => {
         const mood = btn.dataset.mood;
         const today = new Date();
         const dateStr = formatDate(today.getFullYear(), today.getMonth(), today.getDate());
+        const dateStr = today.toISOString().split('T')[0];
         let moodLogs = JSON.parse(localStorage.getItem('moodLogs')) || [];
         const existing = moodLogs.find(entry => entry.date === dateStr);
         if (existing) {
