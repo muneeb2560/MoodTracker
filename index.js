@@ -79,5 +79,23 @@ document.querySelector('.next-month').addEventListener('click', () => {
     generateCalendar(currentYear, currentMonth);
 });
 
+// Log mood for the current day
+document.querySelectorAll('.mood-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const mood = btn.dataset.mood;
+        const today = new Date();
+        const dateStr = today.toISOString().split('T')[0];
+        let moodLogs = JSON.parse(localStorage.getItem('moodLogs')) || [];
+        const existing = moodLogs.find(entry => entry.date === dateStr);
+        if (existing) {
+            existing.mood = mood;
+        } else {
+            moodLogs.push({ date: dateStr, mood });
+        }
+        localStorage.setItem('moodLogs', JSON.stringify(moodLogs));
+        generateCalendar(currentYear, currentMonth);
+    });
+});
+
 // Initial setup
 generateCalendar(currentYear, currentMonth);
