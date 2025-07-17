@@ -2,6 +2,17 @@
 let currentYear = new Date().getFullYear();
 let currentMonth = new Date().getMonth();
 
+// Helper to format a date (using local time) as YYYY-MM-DD
+function formatDate(year, month, day) {
+    return (
+        year +
+        '-' +
+        String(month + 1).padStart(2, '0') +
+        '-' +
+        String(day).padStart(2, '0')
+    );
+}
+
 // Modified generateCalendar to accept parameters
 function generateCalendar(year, month) {
     const calendarContainer = document.getElementById('calendarContainer');
@@ -42,7 +53,7 @@ function generateCalendar(year, month) {
         const cell = document.createElement('div');
         cell.className = 'day-cell';
         
-        const dateStr = new Date(yearParam, monthParam, day).toISOString().split('T')[0];
+        const dateStr = formatDate(yearParam, monthParam, day);
         
         // Add day number and mood display
         const dayNumber = document.createElement('div');
@@ -77,6 +88,24 @@ document.querySelector('.next-month').addEventListener('click', () => {
         currentYear++;
     }
     generateCalendar(currentYear, currentMonth);
+});
+
+// Log mood for the current day
+document.querySelectorAll('.mood-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const mood = btn.dataset.mood;
+        const today = new Date();
+        const dateStr = formatDate(today.getFullYear(), today.getMonth(), today.getDate());
+        let moodLogs = JSON.parse(localStorage.getItem('moodLogs')) || [];
+        const existing = moodLogs.find(entry => entry.date === dateStr);
+        if (existing) {
+            existing.mood = mood;
+        } else {
+            moodLogs.push({ date: dateStr, mood });
+        }
+        localStorage.setItem('moodLogs', JSON.stringify(moodLogs));
+        generateCalendar(currentYear, currentMonth);
+    });
 });
 
 // Initial setup
